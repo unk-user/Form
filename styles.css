@@ -8,6 +8,10 @@
     --split1: #f09c85;
     --split2: #f085d9;
     --split2low: #f085d91b;
+    --darkbackground: #18122B;
+    --darktheme1: #393053;
+    --darktheme2: #443C68;
+    --darktheme3: #635985;
 }
 html {
     height: 100%;
@@ -34,6 +38,7 @@ header h1 {
 }
 #formcontainer {
     padding: 10%;
+    padding-top: 0;
     font-family: Tilt;
     display: flex;
     flex-direction: column;
@@ -173,6 +178,31 @@ input:active {
 input:focus {
     border-color: var(--tedratic2);
 }
+#theme {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+#theme button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#theme button svg {
+    margin-top: 2px;
+}
+#light {
+    background-color: var(--tedratic2);
+}
+#dark {
+    background-color: var(--darktheme2);
+}
+
 @font-face {
     font-family: Tilt;
     src: url(ressources/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
