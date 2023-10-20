@@ -1,0 +1,183 @@
+:root {
+    --background: #85f0d2;
+    --tedratic1: #f085a3;
+    --tedratic2: #f0d285;
+    --tedratic3: #85a3f0;
+    --analogous1: #85d9f0;
+    --analogous2: #85f09c;
+    --split1: #f09c85;
+    --split2: #f085d9;
+    --split2low: #f085d91b;
+}
+html {
+    height: 100%;
+    background-color: var(--background);
+}
+body {
+    background-color: #FFFFFF;
+    height: 600px;
+    width: 1000px;
+    margin: 10vh auto 0 auto;
+    overflow: hidden;
+    border-radius: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+header {
+    font-size: 30px;
+    height: 20%;
+}
+header h1 {
+    margin: 0;
+}
+#formcontainer {
+    padding: 10%;
+    font-family: Tilt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 12px;
+    row-gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#info div {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    padding-left: 5px;
+}
+input::placeholder {
+    opacity: 0.5;
+    font-weight: bold;
+}
+label {
+    margin-left: 5px; 
+}
+#buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+#buttons button {
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#login {
+    background: linear-gradient(90deg, var(--split1), var(--split2));
+    border: 0;
+    color: #FFFFFF;
+}
+#google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+svg {
+    height: 90%;
+}
+#left {
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--split1);
+    background-image: url(ressources/BackgroundP.png);
+    background-blend-mode: multiply;
+    background-size: 50px;
+    height: 100%;
+}
+#generalinfo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 70%;
+    height: 75%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.332);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#iconcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    font-family:IBM-bold;
+    font-weight: bolder;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius: 5px;
+}
+#icon {
+    margin-right: 10px;
+    height: 60%;
+}
+#introduction {
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+#introduction h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#introduction p {
+    font-size: 20px;
+    margin: 0;
+}
+#signin a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--tedratic2);
+    font-size: 22px;
+}
+a:visited {
+    text-decoration: none;
+    color: var(--split1);
+}
+a:hover {
+    color: var(--analogous2);
+}
+button:hover {
+    cursor: pointer;
+}
+#login:active {
+    background: linear-gradient(90deg, var(--analogous2), var(--analogous1));
+    border: 0;
+
+}
+input:valid{
+    border-color: var(--analogous2);
+    background-color: var(--analogous2);
+}
+input:invalid {
+    border-color: var(--tedratic1);
+}
+input:active {
+    border-color: var(--tedratic2);
+}
+input:focus {
+    border-color: var(--tedratic2);
+}
+@font-face {
+    font-family: Tilt;
+    src: url(ressources/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+@font-face {
+    font-family: IBM-bold;
+    src: url(ressources/IBMPlexMono-Bold.ttf);
+}
