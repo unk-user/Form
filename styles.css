@@ -13,6 +13,9 @@
     --darktheme2: #443C68;
     --darktheme3: #635985;
 }
+* {
+    transition: 0.2s;
+}
 html {
     height: 100%;
     background-color: var(--background);
